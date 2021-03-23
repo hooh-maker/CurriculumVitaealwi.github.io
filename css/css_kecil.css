@@ -1,0 +1,504 @@
+@media(max-width: 620px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /*  
+          font-family: 'Poppins',
+            sans-serif;
+        */
+    html {
+        background-color: #eeeff4;
+        font-family: 'Poppins',
+            sans-serif;
+    }
+
+    /*------------hiasan-------------*/
+    .hiasan {
+        position: absolute;
+    }
+
+    .hiasan1 {
+        position: absolute;
+        top: 26vw;
+        left: 43vw;
+        width: 15vw;
+    }
+
+
+    .hiasan3 {
+        position: absolute;
+        opacity: 1;
+        top: 96vw;
+        left: -5vw;
+        width: 20vw;
+    }
+
+    nav {
+        width: 100%;
+        height: 10vw;
+        color: #d97642;
+        padding: 0 0 0 2vw;
+        display: flex;
+        align-items: center;
+    }
+
+    nav p {
+        font-weight: 1000;
+        font-size: 4vw;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 0 10vw 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header_kiri {
+        background-color: #eeeff4;
+        width: 70%;
+        padding: 20vw 0 0 3vw;
+    }
+
+    .social {
+        width: 100%;
+        height: 5vw;
+        display: flex;
+        margin: 0 0 5vw 0;
+        flex-direction: row;
+    }
+
+    .social1 {
+        width: 6vw;
+        height: 6vw;
+        margin: 0 1vw 0 0;
+    }
+
+    .social1 a {
+        text-decoration: none;
+        color: #fff;
+        width: 6vw;
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vw;
+        font-size: 2vw;
+        font-size: 3vw;
+        background-image: linear-gradient(109.6deg, #9897f5 11.2%, #6245ff 100.2%);
+    }
+
+
+    .social2 {
+        width: 5vw;
+        height: 5vw;
+        margin: 0 2vw 0 0;
+    }
+
+    .social2 a {
+        text-decoration: none;
+        font-size: 3vw;
+        border: 0.2vw solid #6e68af;
+        border-radius: 5vw;
+        width: 6vw;
+        color: #000;
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 1000;
+    }
+
+    .social2 a:hover {
+        color: #fff;
+        transition: 0.5s;
+        background-color: #6e68af;
+        border: 0.2vw solid #6e68af;
+    }
+
+    .header_kiri h1 {
+        font-size: 7vw;
+        margin: -1vw 0 0 0;
+    }
+
+    .header_kiri h2 {
+        font-size: 2.5vw;
+        font-weight: 100;
+        color: #6245ff;
+    }
+
+    .pdf {
+        margin: 13vw 0 0 0;
+    }
+
+    .pdf a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 27vw;
+        height: 8vw;
+        color: #fff;
+        font-size: 3vw;
+        border-radius: 4vw;
+        background-image: linear-gradient(109.6deg, #9f99e0 14.2%, #6e68af 100.2%);
+    }
+
+    .web_project {
+        width: 10vw;
+        margin: 4vw 0 0 0;
+        text-align: center;
+    }
+
+    .web_project_angka {
+        color: #d97642;
+        font-size: 3vw;
+    }
+
+    .header_kanan {
+        width: 50%;
+    }
+
+
+    .header_kanan img {
+        position: absolute;
+        top: 0;
+        left: 34.8vw;
+        width: 65vw;
+    }
+
+    /*--------keahlian--------------*/
+    .keahlian {
+        width: 100%;
+        margin: 0 0 15vw 0;
+    }
+
+    .keahlian_p {
+        text-align: center;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 1000;
+        font-family: 'Rubik',
+            sans-serif;
+        color: #6e68af;
+        margin: 0 0 7vw 0;
+    }
+
+    .bidang {
+        width: 65vw;
+        margin: 0 auto 2vw auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 3vw;
+    }
+
+    .bidang_kotak {
+        background-color: #fff;
+        box-shadow: 10px 10px 75px -32px rgba(150, 150, 150, 0.75);
+        padding: 13vw 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2vw;
+    }
+
+    .bidang_kotak i {
+        color: #949494;
+        text-align: center;
+        font-size: 10vw;
+        margin: 0 0 3vw 0;
+    }
+
+    .code_p2 {
+        text-align: center;
+        font-size: 5vw;
+        margin: 0 0 1vw 0;
+    }
+
+    .code_p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    /*-----------tentang-----------------*/
+    .tentang {
+        width: 100%;
+        padding: 6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(159.6deg, #6e68af 13.2%, #7772b1 100.2%);
+
+    }
+
+    .judul_tentang {
+        font-size: 6vw;
+        font-weight: bold;
+        color: #fed049;
+        font-family: 'Rubik',
+            sans-serif;
+    }
+
+    .tentang_kanan {
+        margin: 10vw 0 0 0;
+    }
+
+    .tentang_isi {
+        position: relative;
+        margin: 1vw 0;
+        font-size: 3.5vw;
+        color: #fff;
+        z-index: 10;
+    }
+
+    .svg1 {
+        width: 70vw;
+        margin: 2vw auto 3vw auto;
+
+    }
+
+    .hiasan2 {
+        position: absolute;
+        top: 600vw;
+        left: -6vw;
+        width: 60vw;
+    }
+
+    /*-------------biodata-----------*/
+    .biodata {
+        width: 100vw;
+        margin: 15vw auto 5vw auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biodata_kiri {
+        background-color: #5e5997;
+        padding: 5vw 2vw 10vw 4vw;
+    }
+
+    .biodata_judul_kiri {
+        font-size: 6vw;
+        font-weight: bold;
+        color: #fed049;
+        font-family: 'Rubik',
+            sans-serif;
+    }
+
+    .bio_data {
+        margin: 2vw 0 0 0;
+        display: grid;
+        grid-template-columns: 40vw 3vw 48vw;
+        grid-column-gap: 2vw;
+        color: #fff;
+        font-size: 3.5vw;
+    }
+
+    .bio_kiri p {
+        margin: 0 0 1vw 0;
+    }
+
+    .bio_titik p {
+        margin: 0 0 1vw 0;
+    }
+
+    .bio_penjelasan p {
+        margin: 0 0 1vw 0;
+    }
+
+    .batas {
+        width: 90%;
+        margin: 2vw 0 0 0;
+        height: 0.5vw;
+        background-color: #fff;
+        content: "";
+        border-radius: 10vw;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 5vw 0 0 0;
+        display: grid;
+        grid-template-columns: 10vw 60vw;
+        grid-column-gap: 4vw;
+    }
+
+    .contact_logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_logo i {
+        font-size: 8vw;
+        color: #fff;
+        margin: 3vw 0;
+    }
+
+    .contact_isi {
+        font-size: 3.5vw;
+        margin: 3vw 0;
+        color: #fff;
+    }
+
+
+    .contact_email {
+        margin: 8vw 0 8vw 0;
+    }
+
+    .hobi {
+        margin: 2vw 0 0 0;
+    }
+
+    .hobi h3 {
+        color: #fff;
+        font-size: 6vw;
+    }
+
+    .hobi p {
+        margin: 1vw 0 0 4vw;
+        color: #fff;
+        font-size: 3.5vw;
+    }
+
+    .biodata_kanan {
+        margin: 5vw 0 0 0;
+        padding: 3vw;
+    }
+
+    .biodata_kanan h4 {
+        color: #5e5997;
+        font-size: 6vw;
+        font-weight: 1000;
+    }
+
+    .batas2 {
+        width: 90%;
+        margin: 0.2vw 0 3vw 0;
+        height: 0.5vw;
+        background-color: #5e5997;
+        content: "";
+        border-radius: 10vw;
+    }
+
+    .biodata_kanan p {
+        margin: 1vw 0 0 3vw;
+        font-size: 3.5vw;
+    }
+
+    .sertifikat {
+        margin: 2vw 0 0 0;
+    }
+
+    .sertifikat h5 {
+        font-size: 4vw;
+        font-weight: 100;
+        letter-spacing: 0.5vw;
+        color: #0a043c;
+        margin: 2vw 0 1vw 0;
+    }
+
+    .skil {
+        margin: 2vw 0 0 0;
+        width: 100%;
+    }
+
+    .skil_macam {
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+
+        margin: auto;
+    }
+
+    .skil_name {
+        display: grid;
+        margin: 1vw 0;
+        grid-template-columns: 30vw 15vw;
+        align-items: center;
+        justify-items: center;
+        font-size: 3.5vw;
+    }
+
+    .skil_box {
+        width: 20vw;
+        height: 4.5vw;
+        background-color: #bbbbbb;
+    }
+
+    .skil_pres1 {
+        width: 50%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres2 {
+        width: 80%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres3 {
+        width: 70%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres4 {
+        width: 60%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres5 {
+        width: 80%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres6 {
+        width: 70%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres7 {
+        width: 90%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .skil_pres8 {
+        width: 40%;
+        height: 4.5vw;
+        content: "";
+        background-color: #046582;
+    }
+
+    .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loading img {
+        width: 40vw;
+    }
+
+}
