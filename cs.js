@@ -1,13 +1,51 @@
-var loading = document.getElementById("loading");
+let loading = document.getElementById("loading");
 window.addEventListener('load', function () {
     loading.style.display = "none";
+
 })
 
-const hiasan = document.querySelector(".hiasan1")
-const gambarku = document.querySelector("#gambarku")
+function scrollBidang() {
+    var bidangIki = document.querySelector('.bidang');
+    var posisiStart = bidangIki.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
 
-const cv = new TimelineMax();
+    if (posisiStart < screenPosition){
+        bidangIki.classList.add('bidang_active')
+    } else {
+        bidangIki.classList.remove('bidang_active');
+    }
+}
 
-cv
-.fromTo(gambarku, 1, { opacity: "0", x: "10%" }, { opacity: "1", x: "0.3%" }, "-=1")
-.fromTo(hiasan, 1, { opacity: "0", x: "10%" }, { opacity: "1", x:"1%" })
+//animasi scroll to bidang2
+
+function scrollBidang2() {
+    var bidangIki2 = document.querySelector('.bidang2');
+    var posisiStart2 = bidangIki2.getBoundingClientRect().top;
+    var screenPosition2 = window.innerHeight;
+
+    if (posisiStart2 < screenPosition2) {
+        bidangIki2.classList.add('bidang2_active')
+    } else {
+        bidangIki2.classList.remove('bidang2_active');
+    }
+}
+
+// animasi scroll background about
+
+function aboutBg() {
+    const bgAbout = document.querySelector('.tentang_kanan');
+    const posisiBg = bgAbout.getBoundingClientRect().top;
+    const screenBg = window.innerHeight;
+
+    if (posisiBg < screenBg) {
+        bgAbout.classList.add('isi-active');
+    } else {
+        bgAbout.classList.remove('isi-active');
+    }
+}
+
+window.addEventListener('scroll', scrollBidang2);
+window.addEventListener('scroll', scrollBidang);
+window.addEventListener('scroll', aboutBg);
+
+
