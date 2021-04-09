@@ -1,37 +1,31 @@
-@media(min-width: 620px) {
+@media(min-width:620px) {
     * {
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
+        box-sizing: border-box
     }
 
-    /*  
-          font-family: 'Poppins',
-            sans-serif;
-        */
     html {
         background-color: #eeeff4;
-        font-family: 'Poppins',
-            sans-serif;
+        font-family: Poppins, sans-serif
     }
 
-    /*------------hiasan-------------*/
     .hiasan {
-        position: absolute;
+        position: absolute
     }
 
     .hiasan1 {
         position: absolute;
         top: 25vw;
         left: 63vw;
-        width: 10vw;
+        width: 10vw
     }
 
     .hiasan2 {
         position: relative;
         top: -7.5vw;
         left: -6vw;
-        width: 20vw;
+        width: 20vw
     }
 
     .hiasan3 {
@@ -39,7 +33,7 @@
         opacity: 1;
         top: 49vw;
         left: -5vw;
-        width: 17vw;
+        width: 17vw
     }
 
     nav {
@@ -48,25 +42,24 @@
         color: #d97642;
         padding: 0 0 0 2vw;
         display: flex;
-        align-items: center;
+        align-items: center
     }
 
     nav p {
         font-weight: 1000;
-        font-size: 2vw;
+        font-size: 2vw
     }
 
     header {
         width: 100%;
         height: 44vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: row
     }
 
     .header_kiri {
         width: 50%;
-
-        padding: 10vw 0 0 10vw;
+        padding: 10vw 0 0 10vw
     }
 
     .social {
@@ -74,13 +67,13 @@
         height: 2vw;
         display: flex;
         margin: 0 0 1vw 0;
-        flex-direction: row;
+        flex-direction: row
     }
 
     .social1 {
         width: 3vw;
         height: 3vw;
-        margin: 0 0.3vw 0 0;
+        margin: 0 .3vw 0 0
     }
 
     .social1 a {
@@ -93,20 +86,19 @@
         justify-content: center;
         border-radius: 2vw;
         font-size: 1.5vw;
-        background-image: linear-gradient(109.6deg, #9897f5 11.2%, #6245ff 100.2%);
+        background-image: linear-gradient(109.6deg, #9897f5 11.2%, #6245ff 100.2%)
     }
-
 
     .social2 {
         width: 3vw;
         height: 3vw;
-        margin: 0 0.3vw 0 0;
+        margin: 0 .3vw 0 0
     }
 
     .social2 a {
         text-decoration: none;
         font-size: 1.5vw;
-        border: 0.2vw solid #6e68af;
+        border: .2vw solid #6e68af;
         border-radius: 2vw;
         width: 2.7vw;
         color: #000;
@@ -114,24 +106,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 1000;
+        font-weight: 1000
     }
 
     .social2 a:hover {
         color: #fff;
-        transition: 0.5s;
+        transition: .5s;
         background-color: #6e68af;
-        border: 0.2vw solid #6e68af;
+        border: .2vw solid #6e68af
     }
 
     .header_kiri h1 {
-        font-size: 3.5vw;
+        font-size: 3.5vw
     }
 
     .header_kiri h2 {
         font-size: 1.2vw;
         font-weight: 100;
-        color: #6245ff;
+        color: #6245ff
     }
 
     .pdf {
@@ -148,37 +140,34 @@
         color: #fff;
         font-size: 1.2vw;
         border-radius: 1vw;
-        background-image: linear-gradient(109.6deg, #9f99e0 14.2%, #6e68af 100.2%);
+        background-image: linear-gradient(109.6deg, #9f99e0 14.2%, #6e68af 100.2%)
     }
 
     .web_project {
         width: 10vw;
         margin: 4vw 0 0 0;
-        text-align: center;
+        text-align: center
     }
 
     .web_project_angka {
         color: #d97642;
-        font-size: 3vw;
+        font-size: 3vw
     }
 
     .header_kanan {
-        width: 50%;
+        width: 50%
     }
-
 
     .header_kanan img {
         position: absolute;
         top: 0;
         left: 53.5vw;
-        width: 45vw;
+        width: 45vw
     }
 
-    /*--------keahlian--------------*/
     .keahlian {
         width: 100%;
-        height: 80vw;
-
+        height: 80vw
     }
 
     .keahlian_p {
@@ -186,9 +175,8 @@
         font-size: 3vw;
         font-style: normal;
         font-weight: 1000;
-        font-family: 'Rubik',
-            sans-serif;
-        color: #6e68af;
+        font-family: Rubik, sans-serif;
+        color: #6e68af
     }
 
     .bidang {
@@ -198,37 +186,82 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 3vw;
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: 1s ease-in-out
+    }
+
+    .bidang_active {
+        top: 0;
+        opacity: 1;
+        transform: translateY(3vw);
+        transition: 2s ease-in
     }
 
     .bidang_kotak {
         background-color: #fff;
-        box-shadow: 10px 10px 75px -32px rgba(150, 150, 150, 0.75);
+        box-shadow: 10px 10px 75px -32px rgba(150, 150, 150, .75);
         padding: 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column
+    }
+
+    .bidang2 {
+        width: 60%;
+        margin: 3vw auto 5vw auto;
+        height: 30vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3vw;
+        opacity: 0;
+        transform: translateY(2vw);
+        transition: 1s ease-in-out
+    }
+
+    .bidang2_active {
+        top: 0;
+        opacity: 1;
+        transform: translateY(4vw);
+        transition: 1s ease-in
+    }
+
+    .bidang2_kotak {
+        background-color: #fff;
+        box-shadow: 10px 10px 75px -32px rgba(150, 150, 150, .75);
+        padding: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column
     }
 
     .bidang_kotak i {
         color: #949494;
         text-align: center;
         font-size: 4vw;
-        margin: 0 0 3vw 0;
+        margin: 0 0 3vw 0
+    }
+
+    .bidang2_kotak i {
+        color: #949494;
+        text-align: center;
+        font-size: 4vw;
+        margin: 0 0 3vw 0
     }
 
     .code_p2 {
         text-align: center;
         font-size: 1.8vw;
-        margin: 0 0 1vw 0;
+        margin: 0 0 1vw 0
     }
 
     .code_p {
         text-align: center;
-        font-size: 1.2vw;
+        font-size: 1.2vw
     }
 
-    /*-----------tentang-----------------*/
     .tentang {
         width: 100%;
         height: 40vw;
@@ -236,50 +269,65 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 4vw;
-        background-image: linear-gradient(159.6deg, #6e68af 13.2%, #7772b1 100.2%);
-
+        background-image: linear-gradient(159.6deg, #6e68af 13.2%, #7772b1 100.2%)
     }
 
     .judul_tentang {
         font-size: 2.5vw;
-        font-weight: bold;
+        font-weight: 700;
         color: #fed049;
-        font-family: 'Rubik',
-            sans-serif;
+        font-family: Rubik, sans-serif
+    }
+
+    .tentang_kanan {
+        opacity: 0;
+        transform: translateY(-2vw);
+        transition: 1s ease-in
     }
 
     .tentang_isi {
+        text-indent: 3vw;
         margin: 1vw 0;
         font-size: 1.2vw;
-        color: #fff;
+        color: #fff
+    }
+
+    .isi-active {
+        opacity: 1;
+        transform: translateY(1vw);
+        transition: 1s ease-in;
+        color: #fff
+    }
+
+    .tentang_isi p {
+        margin: 1vw;
+        height: 2vw
     }
 
     .svg1 {
         width: 33vw;
-        margin: 0 0 2vw 5vw;
+        margin: 0 0 2vw 5vw
     }
 
-    /*-------------biodata-----------*/
     .biodata {
         width: 90%;
         height: 75vw;
         margin: 10vw auto 5vw auto;
         display: grid;
         grid-template-columns: 40vw 50vw;
-        grid-column-gap: 3vw;
+        grid-column-gap: 3vw
     }
 
     .biodata_kiri {
         background-color: #5e5997;
-        padding: 2vw 2vw 0 2vw;
+        padding: 2vw 2vw 0 2vw
     }
 
     .biodata_judul_kiri {
         font-size: 3vw;
-        font-weight: bold;
+        font-weight: 700;
         color: #fed049;
-        font-family: 'Rubik',
-            sans-serif;
+        font-family: Rubik, sans-serif
     }
 
     .bio_data {
@@ -287,119 +335,118 @@
         display: grid;
         grid-template-columns: 17vw 1vw 19vw;
         color: #fff;
-        font-size: 1.3vw;
+        font-size: 1.3vw
     }
 
     .bio_kiri p {
-        margin: 0 0 1vw 0;
+        margin: 0 0 1vw 0
     }
 
     .bio_titik p {
-        margin: 0 0 1vw 0;
+        margin: 0 0 1vw 0
     }
 
     .bio_penjelasan p {
-        margin: 0 0 1vw 0;
+        margin: 0 0 1vw 0
     }
 
     .batas {
         width: 90%;
         margin: 2vw 0 0 0;
-        height: 0.2vw;
+        height: .2vw;
         background-color: #fff;
         content: "";
-        border-radius: 10vw;
+        border-radius: 10vw
     }
 
     .contact {
         width: 100%;
         margin: 1vw 0 0 0;
         display: grid;
-        grid-template-columns: 5vw 30vw;
+        grid-template-columns: 5vw 30vw
     }
 
     .contact_logo {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
     }
 
     .contact_logo i {
         font-size: 3vw;
         color: #fff;
-        margin: 1.5vw 0;
+        margin: 1.5vw 0
     }
 
     .contact_isi {
         font-size: 1.3vw;
         margin: 2vw 0;
-        color: #fff;
+        color: #fff
     }
 
-
     .contact_email {
-        margin: 3.5vw 0;
+        margin: 3.5vw 0
     }
 
     .hobi {
-        margin: 2vw 0 0 0;
+        margin: 2vw 0 0 0
     }
 
     .hobi h3 {
         color: #fff;
-        font-size: 2vw;
+        font-size: 2vw
     }
 
     .hobi p {
         margin: 1vw 0 0 4vw;
         color: #fff;
-        font-size: 1.3vw;
+        font-size: 1.3vw
     }
 
     .biodata_kanan {
-        padding: 2vw;
+        padding: 2vw
     }
 
     .biodata_kanan h4 {
         color: #5e5997;
         font-size: 2vw;
-        font-weight: 1000;
+        font-weight: 1000
     }
 
     .batas2 {
         width: 90%;
-        margin: 0.2vw 0 2vw 0;
-        height: 0.2vw;
+        margin: .2vw 0 2vw 0;
+        height: .2vw;
         background-color: #5e5997;
         content: "";
-        border-radius: 10vw;
+        border-radius: 10vw
     }
 
     .biodata_kanan p {
-        margin: 0.5vw 0 0 3vw;
-        font-size: 1.3vw;
+        margin: .5vw 0 0 3vw;
+        font-size: 1.3vw
     }
 
     .sertifikat {
-        margin: 2vw 0 0 0;
+        margin: 2vw 0 0 0
     }
 
     .sertifikat h5 {
         font-size: 1.5vw;
         font-weight: 100;
-        letter-spacing: 0.5vw;
+        letter-spacing: .5vw;
         color: #0a043c;
-        margin: 2vw 0 1vw 0;
+        margin: 2vw 0 1vw 0
     }
 
     .skil {
         margin: 2vw 0 0 0;
-        width: 100%;
+        width: 100%
     }
 
     .skil_macam {
         display: grid;
         grid-template-columns: 20vw 20vw;
-        margin: auto;
+        margin: auto
     }
 
     .skil_name {
@@ -408,69 +455,69 @@
         margin: 1vw 0;
         grid-template-columns: 12vw 10vw;
         align-items: center;
-        justify-items: center;
+        justify-items: center
     }
 
     .skil_box {
         width: 10vw;
         height: 2vw;
-        background-color: #bbbbbb;
+        background-color: #bbb
     }
 
     .skil_pres1 {
         width: 50%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres2 {
         width: 80%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres3 {
         width: 70%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres4 {
         width: 60%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres5 {
         width: 80%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres6 {
         width: 70%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres7 {
         width: 90%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .skil_pres8 {
         width: 40%;
         height: 2vw;
         content: "";
-        background-color: #046582;
+        background-color: #046582
     }
 
     .loading {
@@ -482,11 +529,14 @@
         background-color: #fff;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
     .loading img {
-        width: 20vw;
+        width: 20vw
     }
 
+    .bgg {
+        background-color: #d97642
+    }
 }
