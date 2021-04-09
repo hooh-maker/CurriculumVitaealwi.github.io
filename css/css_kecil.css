@@ -193,6 +193,17 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 3vw;
+
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: 1s ease-in-out;
+    }
+
+    .bidang_active {
+        top: 0;
+        opacity: 1;
+        transform: translateY(3vw);
+        transition: 2s ease-in;
     }
 
     .bidang_kotak {
@@ -207,6 +218,43 @@
     }
 
     .bidang_kotak i {
+        color: #949494;
+        text-align: center;
+        font-size: 10vw;
+        margin: 0 0 3vw 0;
+    }
+
+    .bidang2 {
+        width: 65vw;
+        margin: 0 auto 2vw auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 3vw;
+
+        opacity: 0;
+        transform: translateY(-5vw);
+        transition: 1s ease-in-out;
+    }
+
+    .bidang2_active {
+        top: 0;
+        opacity: 1;
+        transform: translateY(3vw);
+        transition: 2s ease-in;
+    }
+
+    .bidang2_kotak {
+        background-color: #fff;
+        box-shadow: 10px 10px 75px -32px rgba(150, 150, 150, 0.75);
+        padding: 13vw 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2vw;
+    }
+
+    .bidang_kotak2 i {
         color: #949494;
         text-align: center;
         font-size: 10vw;
