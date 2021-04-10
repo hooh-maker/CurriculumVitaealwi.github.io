@@ -317,6 +317,69 @@
         width: 60vw;
     }
 
+    /*-------project--------------*/
+
+    .project {
+        margin: 15vw 0;
+    }
+
+    .project h6 {
+        font-size: 7vw;
+        font-family: Rubik,
+            sans-serif;
+        color: #5e5997;
+        text-align: center;
+    }
+
+    .hiasan-project {
+        width: 15vw;
+        background-color: #F15D22;
+        height: 2vw;
+        margin: 1vw auto;
+        border-radius: 10vw;
+    }
+
+    .kotak-project {
+
+        margin: 10vw auto 5vw auto;
+    }
+
+    .list-project a {
+        text-decoration: none;
+        color: #000;
+        font-family: Rubik,
+            sans-serif;
+        font-size: 4.5vw;
+    }
+
+    .list-project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5vw auto;
+        width: 45vh;
+        background-color: #FDFDFD;
+        height: 15vw;
+        border-radius: 1vw 2vw 2vw 0;
+        box-shadow: 6px 6px 21px -6px rgba(120, 120, 120, 1);
+    }
+
+    .left1 {
+        border-left: 1vw solid #2F67DC;
+    }
+
+    .left2 {
+        border-left: 1vw solid #F15D22;
+    }
+
+    .left3 {
+        border-left: 1vw solid #0DBCBE;
+        margin: auto;
+    }
+
+    /*-----project---------*/
+
+
     /*-------------biodata-----------*/
     .biodata {
         width: 100vw;
