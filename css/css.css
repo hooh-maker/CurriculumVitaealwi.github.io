@@ -309,6 +309,70 @@
         margin: 0 0 2vw 5vw
     }
 
+    /*-------project--------------*/
+
+    .project {
+        height: 30vw;
+        margin: 10vw 0;
+    }
+
+    .project h6 {
+        font-size: 3vw;
+        font-family: Rubik,
+            sans-serif;
+        color: #5e5997;
+        text-align: center;
+    }
+
+    .hiasan-project {
+        width: 4vw;
+        background-color: #F15D22;
+        height: 0.6vw;
+        margin: 0.5vw auto;
+        border-radius: 10vw;
+    }
+
+    .kotak-project {
+        width: 90%;
+        margin: 4vw auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-project a {
+        text-decoration: none;
+        color: #000;
+        font-family: Rubik,
+            sans-serif
+    }
+
+    .list-project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1vw 0;
+        width: 40vw;
+        background-color: #FDFDFD;
+        height: 6vw;
+        border-radius: 0.5vw 1vw 1vw 0;
+        box-shadow: 6px 6px 21px -6px rgba(120, 120, 120, 1);
+    }
+
+    .left1 {
+        border-left: 0.5vw solid #2F67DC;
+    }
+
+    .left2 {
+        border-left: 0.5vw solid #F15D22;
+    }
+
+    .left3 {
+        border-left: 0.5vw solid #0DBCBE;
+        margin: auto;
+    }
+
+    /*-----project---------*/
+
     .biodata {
         width: 90%;
         height: 75vw;
